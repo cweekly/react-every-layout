@@ -30,9 +30,10 @@ const Box = styled.div<BoxProps>`
   display: block;
   padding: ${props => props.padding};
 
+  /* not present in canonical EL component impl; commenting for now */
   /* ↓ For high contrast mode */
-  outline: var(--border-thin) solid transparent;
-  outline-offset: calc(var(--border-thin) * -1);
+  /* outline: var(--border-thin) solid transparent; */
+  /* outline-offset: calc(var(--border-thin) * -1); */
 `;
 
 Box.propTypes = BoxPropTypes;
