@@ -28,6 +28,11 @@ const Stack = styled.div<StackProps>`
   }
 
   ${({ splitAfter }) => splitAfter ? `
+
+    .stack-l:only-child {
+      height: 100%;
+    }
+
     .stack-l > :nth-child(${splitAfter}) {
       margin-bottom: auto;
     }`
